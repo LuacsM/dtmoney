@@ -1,11 +1,10 @@
 import { useEffect } from "react";
-import { api } from "../../services/api";
+import  api from "../../services/api";
 import { Container } from "./styles";
 
 export function TransactionsTable(){
     useEffect(() => {
-        api.get('transactions')
-            .then(data => console.log(data))
+        //api.post('\submit', data);
     }, []);
 
     return(

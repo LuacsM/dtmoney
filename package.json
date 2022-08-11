@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@notionhq/client": "^2.1.1",
     "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
     "miragejs": "^0.1.45",
     "polished": "^4.2.2",
     "react": "^18.2.0",

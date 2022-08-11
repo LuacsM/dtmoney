@@ -5,6 +5,9 @@ import incomeImg from '../../assets/income.svg'
 import outcomeImg from '../../assets/outcome.svg'
 import {Container, TransactionTypeContainer, RadioBox} from './styles'
 
+import api from '../../services/api'
+import axios, { Axios } from "axios";
+
 interface NewTransactionModalProps{
     isOpen: boolean;
     onRequestClose: () => void;
@@ -20,12 +23,16 @@ export function NewTransactionModal({isOpen, onRequestClose}:NewTransactionModal
     function handleCreateNewTransaction(event: FormEvent){
         event.preventDefault();
 
-        console.log({
+        const data = ({
             title,
             value,
             category,
             type
         })
+
+        //console.log(data)
+
+        api(data)
     }
 
     return(
